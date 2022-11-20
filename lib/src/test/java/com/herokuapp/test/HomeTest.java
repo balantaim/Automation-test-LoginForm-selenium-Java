@@ -47,14 +47,9 @@ public class HomeTest extends BaseTest{
 		dropdownSelect.selectByVisibleText(homePage.SelectTextBox());
 		//Submit the data
 		WebElement btnSubmit = driver.findElement((By) homePage.btnSubmit());
-		btnSubmit.click();	
-	}
-//	This should be executed in the new Class, because the page is different.
-	@Test(description = "Check if the name value is correct")
-	public void CheckTheName() {
-		String checkNameData= homePage.assertName();
+		btnSubmit.click();
+		String checkNameData = homePage.assertName();
 		//This is example how to check if the input is correct 
-				Assert.assertEquals(uName, checkNameData);
+		Assert.assertEquals(uName, checkNameData);
 	}
-
 }
