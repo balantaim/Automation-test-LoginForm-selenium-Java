@@ -1,1 +1,1 @@
-This is Selenium Gradle build with TestNG plug-in
+This is Selenium Maven build - TestNG, Selenium, POM
