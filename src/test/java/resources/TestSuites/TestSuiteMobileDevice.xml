@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTestSuite" verbose="1">
+
+    <!-- Test listener replace logger -->
+    <listeners>
+        <listener class-name="org.herokuapp.base.TestListener"/>
+    </listeners>
+
+    <test name="PositiveLogInTest-Android">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="deviceName" value="Pixel 2 XL"/>
+        <classes>
+            <class name="org.herokuapp.tests.HomeTests" />
+        </classes>
+    </test>
+
+    <test name="PositiveLogInTest-iPhone">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="deviceName" value="iPhone X"/>
+        <classes>
+            <class name="org.herokuapp.tests.HomeTests" />
+        </classes>
+    </test>
+
+</suite>
